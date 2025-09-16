@@ -117,7 +117,10 @@ const PszichologiaKategoriak = () => {
   ];
   return (
     <>
-      <div className="card-modern p-6">
+      <div
+        className="card-modern p-6"
+        style={{ fontFamily: "var(--font-bricolage-sans)" }}
+      >
         <h3 className="text-xl font-semibold mb-4">Pszichológiai tesztek</h3>
         <p className="text-gray-600 mb-6">
           Fedezze fel mentális állapotát és tanulási preferenciáit ezekkel a

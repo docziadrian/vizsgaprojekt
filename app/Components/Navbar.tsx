@@ -80,7 +80,7 @@ const Navbar = () => {
                     ${
                       currentLocation === item.path
                         ? "bg-[#ede9fe] text-[#3456ba]"
-                        : "text-[#241c3a] hover:bg-[#f3f4f8]"
+                        : "text-[#241c3a] hover:bg-transparent hover:blur-[0.45px] hover:shadow-sm hover:shadow-[#c3d2fc67]"
                     }
                   `}
                 >

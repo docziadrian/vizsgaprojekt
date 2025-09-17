@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 5000",
     "build": "next build",
     "start": "next start"
   },
@@ -18,7 +18,9 @@
     "next": "15.5.3",
     "npm": "^11.6.0",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "react-multi-carousel": "^2.8.6",
+    "react-responsive-carousel": "^3.2.23"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

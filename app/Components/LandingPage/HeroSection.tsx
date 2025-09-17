@@ -5,6 +5,7 @@ import LehetseegesLogo from "@/public/Ikonok/lehetsegesLogoW.png";
 import Link from "next/link";
 import { TravelExplore, HeartBrokenSharp } from "@mui/icons-material";
 import PsychologyAltIcon from "@mui/icons-material/PsychologyAlt";
+import LandingCarousel from "./LandingCarousel";
 
 const HeroSection = ({
   user,
@@ -51,6 +52,8 @@ const HeroSection = ({
             AI segítség találkozik. Tanulj kártyákkal, oszd meg jegyzeteidet, és
             beszélgess AI segítővel.
           </motion.p>
+
+          <LandingCarousel />
 
           <motion.div
             variants={itemVariants}

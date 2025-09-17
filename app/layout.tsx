@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${bricolageSans.variable}   antialiased`}
+        className={`${bricolageSans.variable} from-blue-400 via-indigo-100/80 to-purple-100/20  antialiased`}
         style={{ fontFamily: "var(--font-bricolage-sans)" }}
       >
         <Navbar />

@@ -35,7 +35,7 @@ const Navbar = () => {
   }, [currentLocation]); // Csak akkor fut le, ha a currentLocation változik
 
   return (
-    <nav className="w-full sticky top-0 z-40 bg-white">
+    <nav className="w-full sticky top-0 z-40 bg-transparent backdrop-blur-lg ">
       <div className="bg-gradient-to-r from-blue-600/50 via-blue-200 to-blue-500/50 p-2 rounded-full w-full h-6 absolute opacity-70 blur-2xl mx-auto"></div>
       <div className="max-w-7xl mx-auto flex items-center justify-between py-3 px-6">
         {/* Logo és oldal neve */}

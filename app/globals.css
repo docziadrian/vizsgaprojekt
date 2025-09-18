@@ -3,3 +3,17 @@
 .background {
   @apply min-h-screen bg-gradient-to-br from-blue-100/90 via-indigo-100/80 to-purple-100/20;
 }
+
+
+.narancsSzinBg {
+  @apply bg-gradient-to-r from-[#f18c49d0] to-[#c06a3bc2];
+}
+
+.narancsSzinBorder {
+  @apply border-3 border-[#c06a3bc2];
+}
+
+
+.kekSzinBg {
+  @apply bg-[#113ec2];
+}

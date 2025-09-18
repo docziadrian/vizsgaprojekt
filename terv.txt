@@ -1,0 +1,112 @@
+I) Mi a projekt?
+A digitális oktatás és a modern pszichológiai támogatás napjainkban egyre fontosabb szerepet kap a fiatalok életében. A diákok sokszor túlterheltek, nehezen találnak hatékony tanulási módszereket, nem tudják pontosan kik ők, mit akarnak, emellett lelki egészségükre is nagyon kevés figyelem irányul az iskolarendszerben. Projektünk célja, hogy egy olyan oktatási és lelki támogatást ötvöző webes platformot hozzunk létre, amely egyszerre segíti a tanulást és lehetőséget biztosít az érzelmi feszültségek kibeszélésére, és a jobb önismeret fejlesztésére.
+A projekt rövid bemutatása
+A platform egy React frontend, NextJs backend keretrendszerrel épülő webalkalmazás, ahol a diákok, adminok, és a vendégek eltérő jogosultságokkal férhetnek hozzá az oldal tartalmaihoz. A rendszer egyik fő pillére a tanulókártya alapú tanulási módszer, amely tantárgyakra és évfolyamokra bontva kínál lehetőséget a tudás elsajátítására.
+A másik fő pillér a pszichológiai támogatás: a diákok lehetőséget kapnak arra, hogy különböző önismereti, és pszichológiai teszteket töltsenek ki, és hogy egy mesterséges intelligencia alapú partnerrel beszélgethessenek a problémáikról, érzéseikről vagy akár a mindennapjaikról. Az AI képes tanácsokat adni, stresszkezelési és tanulási módszereket javasolni, valamint teljes visszajelzést nyújtani.
+A projekt célja és háttere
+A projekt létrehozásának legfontosabb indoka az volt, hogy saját tapasztalataink alapján diákokként gyakran szembesültünk tanulási nehézségekkel, betegségek miatt kihagyott órákkal, valamint azzal, hogy a hagyományos tanulási módszerek sokszor nem motiválnak minket. A mai világban nagyon fontos, hogy megfelelő önismereti képet kapjunk önmagunkról. Az iskolák tanítási módszereik nem fordítanak elég figyelmet arra, hogy a diákok tudják, hogy valójában kik ők, mit akarnak, és hogy ehhez mi kell. Nem tanítják meg hogyan kell tanulni.
+Ezért olyan rendszert terveztünk, amely:
+    • támogatja a tanulást digitális, interaktív formában,
+    • közösségi alapon segíti a jegyzetek és tételek megosztását,
+    • önismereti és tanulási tesztek formájában segít megérteni a diákok érzéseit,
+    • alkalmazható technikákat ajánl a mindennapokra
+
+Miért fontos a projekt, mire ad megoldást?
+A mai oktatási rendszerben a diákok sokszor túlterheltek és kevés figyelem irányul arra, hogyan érzik magukat a tanulási folyamat közben. Projektünk megoldást kínál arra, hogy:
+    • a tanulás digitális, élvezetes és közösségi élmény legyen,
+    • a diákok interaktív módon készülhessenek a vizsgákra,
+    • a tanárok és adminok segíthessék a tananyag ellenőrzését és rendszerezését,
+    • a fiatalok pszichológiai támogatáshoz juthassanak anélkül, hogy emiatt stigmatizálva éreznék magukat.
+
+II) Célkitűzéseink
+A rendszer a tanulókártya (kártya) alapú tanulás, a jegyzet- és tételmegosztás, különböző tesztekkel, valamint a pszichológiai AI-asszisztens ötvözésével kínál innovatív és modern megoldást az iskolai kihívásokra.
+Főbb funkciók
+A platform főbb funkcióit az alábbi területekben határoztuk meg:
+    • Tanulókártya rendszer évfolyamokra és tantárgyakra bontva, képekkel és videókkal kiegészítve.
+    • Jegyzetek és tételek feltöltése, diákok által, like/dislike véleménnyel, téma és osztály alapú szűréssel a legjobb tartalmak kiemelésére.
+    • Oktató videók (későbbi bővítési lehetőségként), amelyek röviden összefoglalják a tananyagot.
+    • Önismereti és tanulási tesztek a jobb önismeret és alkalmazható technikák elsajátítására, valamint a pszichológiai állapot felmérésére.
+    • Hitelesítési rendszer a szerepkörök biztosítására (pl. diák státusz megerősítése).
+    • AI integráció a tanulási és pszichológiai modulban.
+    • Közösségi funkciók: kommentelési lehetőség, like/dislike szavazás, rangsorolt teszteredmények.
+
+Oktatás és lelki egészség
+Az iskolai teljesítményt nemcsak a tanulás minősége, hanem a diák lelki állapota is nagymértékben befolyásolja. Projektünk egyik legfontosabb célkitűzése ezért, hogy az oktatást és a lelki egészséget egyszerre támogassa.
+    • Oktatási oldalról: digitális, interaktív tanulási felület, amely lehetővé teszi a diákok számára, hogy akár önállóan, akár közösségben készüljenek fel a vizsgákra, dolgozatokra.
+    • Pszichológiai oldalról: lehetőség a stressz és feszültség kibeszélésére, empatikus AI-asszisztenssel való beszélgetésre, illetve önismereti, tanulási tesztek kitöltésére, hogy jobban megismerjék magukat, és hogy mit szeretnek csinálni az életben. Törekszünk a minél hitelesebb, átfogóbb pszichológiai kiértékelésre.
+    • Komplex támogatás: a két alappillér ötvözésével nem csupán a tanulási eredmények javítása a cél, hanem a diákok általános jóllétének és önbizalmának növelése is.
+AI implementálása
+A mesterséges intelligencia az utóbbi években hatalmas fejlődésen ment keresztül, és ma már valós lehetőséget biztosít arra, hogy a diákok mind tanulási, mind pedig lelki egészségügyi szempontból hasznát vegyék.
+    • Tanulási támogatás: Az AI képes lesz kérdéseket feltenni a kártyapaklikból, válaszokat értékelni, illetve kiegészítő magyarázatokat adni. Ezáltal nem csupán egy tesztfelületet biztosít, hanem egy valódi interaktív tanulótárssá válik.
+    • Pszichológiai támogatás: A diákok egy AI modellel beszélgethetnek a napjaikról, problémáikról, stresszforrásaikról. Az AI képes empatikusan reagálni, stresszkezelési és tanulási tippeket adni, illetve iránymutatást nyújtani. Hasznos még a pszichológiai tesztek kiértékelésében, az átfogó vélemény megfogalmazásában.
+    • Személyre szabhatóság: Az AI idővel képes lehet felismerni a diák tanulási szokásait, erősségeit és gyenge pontjait, és ehhez igazítani a kérdéseket és javaslatokat.
+
+
+III.) Szerepkörök felosztása, jogosultságok
+Admin szerepkör
+Az adminok rendelkezni fognak egy korlátlan jogkörrel ellátott úgynevezett adminisztrátori szereppel, amikkel a következőket tudnak csinálni: Dokumentumok fel- és letöltése; tanulókártyák készítése, megerősítése, törlése és módosítása; felhasználói adatok megtekintése, törlése, és jogkör módosítása, kommentek megtekintése, törlése.
+Diák szerepkör
+A regisztrációt követően minden felhasználó diák jogkör fog rendelkezni, amikkel a következőket tudja csinálni: Dokumentumok fel- és letöltése, kártyapaklik készítése, saját paklijai módosítása. Saját felhasználói adatainak megtekintése, adatainak módosítása. Kommentek küldése, és saját kommentjeinek módosítása és törlése. Tesztek kitöltése, teszteredményeinek megtekintése, illetve eredményeinek rangsorban való megtekintése.
+Vendég szerepkör
+Részleges betekintés az oldalra, minden olyan személy, aki nem regisztrált/nincs bejelentkezve. Nem tud tesztet kitölteni, míg nem jelentkezik be, csak a dokumentumokat tudja átnézni, viszont letölteni se engedi, míg be nem jelentkezik.
+IV.) Funkciók részletesebben
+Bejelentkezés/Regisztráció
+A következőknek kell rendelkeznie a sikeres regisztráláshoz:
+    • E-mail címnek meg kell felelnie a következőknek:
+        ◦ tartalmaznia kell @ jelet
+        ◦ tartalmaznia kell legalább egy pontot
+        ◦ ne legyen foglalt az email cím
+        ◦ regisztrációt követően meg kell erősítenie
+    • A jelszónak meg kell felelnie a következőknek:
+        ◦ legalább 8 karakter terjedelmű
+        ◦ legfeljebb 200 karakter terjedelmű
+        ◦ tartalmaznia kell kis- és nagybetűt legalább egyet-egyet
+        ◦ tartalmaznia kell legalább egy számot
+        ◦ tartalmaznia kell legalább egy speciális karaktert
+        ◦ meg kell egyeznie a két megadott jelszónak
+    • A felhasználónévnek meg kell felelnie a következőknek:
+        ◦ nem kezdődhet számmal
+        ◦ legalább 3 karaktert tartalmaz
+        ◦ legfeljebb 16 karaktert tartalmaz
+        ◦ nem lehet benne speciális karaktert (kivéve pont és alulvonás)
+        ◦ nem lehet foglalt a felhasználónév
+A bejelentkezésnek a következőknek kell történnie:
+- Rendszerben regisztrált e-mail címet kell megadnia.
+- A regisztrált e-mail címhez a megfelelő jelszót kell megadnia.
+Értesítések
+    • Kék: Az információk átadására, például új kártyapaklik az adott témában.
+    • Piros: Hibás adatkitöltés, nem felelt meg van az általunk kijelölt szabályoknak.
+    • Sárga: Figyelmeztetés, hogy valamit nem csinált meg/nem töltött ki, pedig kötelező mező.
+    • Zöld: Sikeresen elvégzett interakció.
+Felhasználói értesítések
+Amennyiben kommentet ír és arra a kommentre választ kap, akkor a jobb felső sarokban egy kis csengőben megjelenik az értesítés. Amennyiben ő töltötte fel a posztot, akkor az összes kommentről értesítést kap. Amennyiben kártyapaklit töltött fel és engedélyeztetnie kell, akkor az engedélyeztetést követően ismételten értesítést kap.  KONKRÉTAN MIRE KAP ÉRTESÍTÉST
+Navigációs menü 
+    1) Egy bejelentkezett felhasználó (diák)
+    2) Egy bejelentkezett felhasználó (admin)
+    3) Egy vendég felhasználó
+Főoldal
+A főoldal tetején található lesz egy carusel, amiben érdekességek lesznek megjelenítve az oldalról, illetve a legújabb frissítések. A kezdő eleme pedig egy merülj el a TanuloPontban, ami továbbvisz a jegyzetekhez.
+Landolási statisztikák, azaz az oldalon található aktív felhasználókról, adminisztrátorokról, feltöltött tanulókártyákból, feltöltött jegyzetekből és esszékből és tételekből és az oldal értékeléséből (Kártyákban). A statisztikákat egy tömbben tároljuk és dinamikusan lesz feltöltve az oldal betöltésekor.
+Főbb funkciók szintén kártyákban, ahol rövid leírást kap a felhasználó, hogy mi és mit csinál és amennyiben kattintás interakciót alkalmaz az elemen, akkor átirányítja a megfelelő funkciónak az oldalára, ahol az fellelhető. A főbb funkciókat, leírásukat és egy ikont tömbbe táruljuk, majd ezt dinamikusan fogjuk feltölteni a megfelelő oldal betöltésekor. 
+Miért válaszd a TanuloPontot részben 3 pontban felsoroljuk, hogy miért jó a szolgáltatásunk. Ezeket is egy tömbben fogjuk tárolni, ahol a megnevezést, az ikont és a hozzá tartozó leírást helyezzük el, ezt is dinamikusan fogjuk feltölteni a megfelelő oldal betöltésekor.
+
+Tanulókártya oldal
+Az oldal tetején egy szűrő rész lesz, ahol lesz egy kereső input mező, mellette pedig lepörgethető menükből lesz választható az évfolyam, tantárgy, típus ez alatt pedig fellelhető lesz a lentebb kielemzett keresési megoldások alapján sorba rendezve a megoldást. A kártyák elrendezése, pedig tartalmazni fog egy képet, a kép alatt felsorolva a megfelelő címkékeket amik segítenek a kártya behatározásában, alatta lesz a cím, hogy hány kártyát tartalmaz, és a képen amennyiben rá lesz húzva az egér, akkor egy „Kezdj el tanulni” gomb. Kártyákat tömbben fogjuk tárolni, ahol a következők lesznek eltárolva: címkék, cím, rövid leírás, egy kép, értékelések száma, kommentek száma, megerősített-e,     
+Egy tanulókártya kiválasztása
+A képernyő jobb oldalán lesz a pakli, amire kattintva behoz animálva bal oldalra egy kártyát, amin megjelenik az adott téma, illetve általános kérdések jelennek meg a képernyő alsó részére rögzített input mezőben, itt a tanuló el tudja kezdeni a tudásának felmérését, amikor folyamatosan interakcióban van a mesterséges intelligenciával, a végén pedig kiértékeli az AI és elmondja, hogy mit kell még átnézni.
+Tételek oldal
+Az oldal tetején egy szűrő rész lesz, ahol lesz egy kereső input mező, mellette pedig lepörgethető menükből lesz választható a tantárgy, típus ez alatt pedig fellelhető lesz a lentebb kielemzett keresési megoldások alapján sorba rendezve a megoldást. 
+Jegyzetek oldal
+Az oldal tetején egy szűrő rész lesz, ahol lesz egy kereső input mező, mellette pedig lepörgethető menükből lesz választható a tantárgy, típus ez alatt pedig fellelhető lesz a lentebb kielemzett keresési megoldások alapján sorba rendezve a megoldást. 
+Mentális egészség oldal
+Keresősáv
+Keresési eredmények
+Kommentek és válasz
+Like és dislike funkció
+Kártyapakli teszt
+Eredmények megtekintése
+Kijelentkezés
+Tesztek
+Esszé oldal
+Az oldal tetején egy szűrő rész lesz, ahol lesz egy kereső input mező, mellette pedig lepörgethető menükből lesz választható a tantárgy, típus ez alatt pedig fellelhető lesz a lentebb kielemzett keresési megoldások alapján sorba rendezve a megoldást. 
+Profil megtekintése

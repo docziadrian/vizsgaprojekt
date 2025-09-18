@@ -5,30 +5,13 @@ import Image from "next/image";
 import carousel1 from "@/public/Kepek/carousel1.png";
 
 const LandingCarousel = () => {
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-      slidesToSlide: 3, // optional, default to 1.
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-      slidesToSlide: 2, // optional, default to 1.
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-      slidesToSlide: 1, // optional, default to 1.
-    },
-  };
   return (
-    <div className="w-full max-w-4xl mx-auto mt-8">
+    <div className="w-full max-w-xl mx-auto">
       <Carousel
-        responsive={responsive}
         showArrows={true}
         showStatus={false}
         showIndicators={true}
+        showThumbs={false}
         infiniteLoop={true}
         autoPlay={true}
         interval={3000}
@@ -36,37 +19,46 @@ const LandingCarousel = () => {
         stopOnHover={true}
         swipeable={true}
         emulateTouch={true}
-        className="rounded-lg shadow-lg"
+        className="rounded-2xl shadow-salient-lg overflow-hidden bg-white/60 backdrop-blur-sm"
       >
         <div>
           <Image
             src={carousel1}
-            alt="Carousel Image 1"
-            className="rounded-lg"
-            width={800}
-            height={400}
+            alt="Kártyák és célzott tanulás"
+            className="w-full h-64 object-cover"
+            width={900}
+            height={360}
           />
-          <p className="legend">Item 1</p>
+          <div className="px-6 py-4 text-left">
+            <h3 className="text-lg font-semibold text-gray-800">Kártyák és célzott tanulás</h3>
+            <p className="text-sm text-gray-600">Szűrés évfolyam és tantárgy szerint, interaktív gyakorlás.</p>
+          </div>
         </div>
         <div>
           <Image
             src={carousel1}
-            alt="Carousel Image 2"
-            className="rounded-lg"
-            width={800}
-            height={400}
+            alt="Jegyzetek és közösségi megosztás"
+            className="w-full h-64 object-cover"
+            width={900}
+            height={360}
           />
-          <p className="legend">Item 2</p>
+          <div className="px-6 py-4 text-left">
+            <h3 className="text-lg font-semibold text-gray-800">Jegyzetek és közösségi megosztás</h3>
+            <p className="text-sm text-gray-600">Feltöltés, értékelés és rendszerezés egy helyen.</p>
+          </div>
         </div>
         <div>
           <Image
             src={carousel1}
-            alt="Carousel Image 3"
-            className="rounded-lg"
-            width={800}
-            height={400}
+            alt="Pszichológiai tesztek és AI támogatás"
+            className="w-full h-64 object-cover"
+            width={900}
+            height={360}
           />
-          <p className="legend">Item 3</p>
+          <div className="px-6 py-4 text-left">
+            <h3 className="text-lg font-semibold text-gray-800">Pszichológiai tesztek és AI támogatás</h3>
+            <p className="text-sm text-gray-600">Önismeret fejlesztése és empatikus AI tanácsadás.</p>
+          </div>
         </div>
       </Carousel>
     </div>

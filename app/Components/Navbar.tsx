@@ -3,7 +3,7 @@
 import LehetseegesLogo from "@/public/Ikonok/lehetsegesLogoW.png";
 import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
-import { useRef, useEffect, useState } from "react";
+import { useRef, useLayoutEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
@@ -21,18 +21,27 @@ const Navbar = () => {
 
   //Az underline animációhoz szükséges ref -ek és állapotok kezelése
   const itemRefs = useRef<(HTMLAnchorElement | null)[]>([]);
+  const listRef = useRef<HTMLUListElement | null>(null);
   const [underlineProps, setUnderlineProps] = useState({ left: 0, width: 0 }); // Kezdeti értéke 0, 0
 
-  useEffect(() => {
-    const idx = navItems.findIndex((item) => item.path === currentLocation);
-    const el = itemRefs.current[idx];
-    if (el) {
-      const { left, width } = el.getBoundingClientRect(); // A left és a width érték kiszedése az objektumból, amit a getBoundingClientRect() visszaad
-      const parentLeft =
-        el.parentElement?.parentElement?.getBoundingClientRect().left || 0;
-      setUnderlineProps({ left: left - parentLeft, width }); // Az underline pozíciójának és szélességének beállítása
-    }
-  }, [currentLocation]); // Csak akkor fut le, ha a currentLocation változik
+  useLayoutEffect(() => {
+    const updateUnderlinePosition = () => {
+      const idx = navItems.findIndex((item) => item.path === currentLocation);
+      const el = itemRefs.current[idx];
+      const container = listRef.current;
+      if (el && container) {
+        const itemRect = el.getBoundingClientRect();
+        const containerRect = container.getBoundingClientRect();
+        setUnderlineProps({ left: itemRect.left - containerRect.left, width: itemRect.width });
+      }
+    };
+
+    updateUnderlinePosition();
+    window.addEventListener('resize', updateUnderlinePosition);
+    return () => {
+      window.removeEventListener('resize', updateUnderlinePosition);
+    };
+  }, [currentLocation]);
 
   return (
     <nav className="w-full sticky top-0 z-40 bg-transparent backdrop-blur-lg ">
@@ -56,17 +65,13 @@ const Navbar = () => {
 
         {/* Közép */}
         <div className="relative">
-          <ul className="flex items-center bg-white/10 border border-[#e3eafc] rounded-full shadow-sm px-4 py-2 gap-2 md:gap-4 backdrop-blur-md relative">
+          <ul ref={listRef} className="flex items-center bg-white/10 border border-[#e3eafc] rounded-full shadow-sm px-4 py-2 gap-2 md:gap-4 backdrop-blur-md relative">
             {/* Motion divelt animáció az underline -hoz */}
             <motion.div
-              layout
+              animate={{ left: underlineProps.left, width: underlineProps.width }}
               transition={{ type: "spring", stiffness: 400, damping: 30 }}
               className="absolute bottom-0 h-[3px] bg-[#2130b8a9] rounded-full"
-              style={{
-                left: underlineProps.left,
-                width: underlineProps.width,
-                zIndex: 1,
-              }}
+              style={{ zIndex: 1 }}
             />
             {navItems.map((item, idx) => (
               <li key={item.path} className="relative z-10 cursor-pointer">

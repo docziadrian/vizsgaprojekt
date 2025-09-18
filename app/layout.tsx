@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/app/Components/Navbar";
+import Navbar from "@/app/Components/Navbar/Navbar";
 
 const bricolageSans = Bricolage_Grotesque({
   subsets: ["latin"],
